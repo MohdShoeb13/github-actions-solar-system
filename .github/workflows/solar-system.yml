@@ -50,9 +50,9 @@ jobs:
          - name: Install Dependencies
            run: npm install 
          - name: code coverage
-           if: always()
            run: npm run coverage
          - name: Upload Code coverage
+           if: always()
            uses: actions/upload-artifact@v4
            with:
             name: Code-Coverage-Result
